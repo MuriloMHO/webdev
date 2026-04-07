@@ -2,10 +2,10 @@
 
  let reverseArray = function (array) {
     let hold = []
-    for (let x = 0; hold < array.length; x++) {
-        hold += array[-1]
+    for (let x = array.length - 1; x >= 0; x--) {
+        hold.push(array[x])
     }
     return hold
- }
+}
 
- console.log(myArray)
+console.log(reverseArray(myArray))
